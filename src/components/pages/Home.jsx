@@ -1,0 +1,45 @@
+import Hero from "../hero"
+import Navbar from "../Layout/Navbar";
+import { useState } from "react";
+import { useIsMobile } from "../../hooks/useIsMobile";
+import Counter from "../Counter";
+import PortfolioSection from "../PortfolioSection";
+import Service from "../Service";
+import Testimonial from "../Testimonial";
+
+function Home() {
+  const isMobile = useIsMobile(); // hook use kiya
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <>
+    <div className=" bg-[#111111] flex min-h-screen ">
+      
+      <Navbar isOpen={isOpen} setIsOpen={setIsOpen}/>
+      <main className="flex-1 lg:ml-64">
+        <div className={` flex justify-center items-center min-h-screen transition-all duration-300 ${isOpen && isMobile? "opacity-50" : "opacity-100"}`}>
+        <Hero/>
+       
+      </div>
+      <div>
+        <Counter/>
+        <PortfolioSection/>
+        <Service/>
+        <Testimonial/>
+  
+      </div>
+      </main>
+     
+        {isOpen && isMobile && (
+        <div
+          className="fixed inset-0 bg-black/40 md:hidden"
+          onClick={() => setIsOpen(false)}
+        />
+      )}
+    </div>
+      
+    </>
+  );
+}
+
+export default Home;

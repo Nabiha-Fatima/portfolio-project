@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Syne:wght@400..800&display=swap');
+@import "tailwindcss";
+
+@theme{
+    --font-outfit : "Outfit";
+    --font-syne : "Syne";
+}
+.nav-underline {
+  @apply relative inline-block z-20;
+
+}
+
+.nav-underline::before {
+  content: '';
+  @apply absolute left-0 bottom-0 h-0.5 w-0 bg-[#D21A1A] transition-all duration-300;
+}
+
+.nav-underline:hover::before {
+  @apply w-full;
+}
+.custom_red{
+  color: #d21a1a;
+}
+.slider_btn{
+  @apply h-10 w-10 my-2 rounded-full bg-[#d21a1a] flex items-center justify-center text-white shadow-md  transition duration-300 hover:shadow-[#d21a1a]
+}
+.custom_container{
+  @apply w-[80%] mx-auto
+}
