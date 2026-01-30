@@ -6,36 +6,36 @@ const AllWOrk = () =>{
     const projects = [
         {
          name : "Futuer wellness",
-         video : "/Videos/video1.mp4",
+         video : "/videos/video1.mp4",
          category : "Real State",
 
       },
        {
          name : "Pathways Centre",
          category : "shorts/Reels",
-          video : "/Videos/video2.mp4",
+          video : "/videos/video2.mp4",
       },
        {
          name : "Teen Thursday",
          category : "shorts/Reels",
-          video : "/Videos/video3.mp4",
+          video : "/videos/video3.mp4",
       },
        {
          name : "The Lifestyle Equivalent of Swallowing Batteries",
          category : "Real Estate",
-          video : "/Videos/video1.mp4",
+          video : "/videos/video1.mp4",
          
       },
        {
          name : "HSA Account",
          category : "Youtube Videos",
-          video : "/Videos/video2.mp4",
+          video : "/videos/video2.mp4",
          
       },
        {
          name : "Brazil Tour Guide",
          category : "Meta Ads",
-          video : "/Videos/video3.mp4",
+          video : "/videos/video3.mp4",
          
       }
     ];

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import PortfolioCard from "./PortfolioCard";
+import PortfolioCard from "../../shared/PortfolioCard";
 
  const PortfolioSection = () =>{
      const [currIndex, setCurrIndex] = useState(0);

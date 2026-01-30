@@ -1,4 +1,4 @@
-import TestimonialCard from "./TestimonialCard";
+import TestimonialCard from "../../shared/TestimonialCard";
 const testimonialData = [
     {
        image : "/images/AraOghoorian.webp",

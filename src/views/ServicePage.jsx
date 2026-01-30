@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react";
-import ServicePageCard from "../servicePageCard";
-import ServiceDescription from "../ServiceDescription";
-import GetStarted from "../GetStarted";
+import ServicePageCard from "../components/shared/ServicePageCard";
+import ServiceDescription from "../components/partials/service/ServiceDescription";
+import GetStarted from "../components/partials/service/GetStarted";
 const ServicePage = () =>{
 
     const serviceCards = [
