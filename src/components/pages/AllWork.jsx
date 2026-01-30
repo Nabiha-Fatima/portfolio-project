@@ -70,7 +70,7 @@ const AllWOrk = () =>{
                      <div className="flex flex-wrap md:gap-4 gap-2">
                           <button className="bg-[#222222] px-3 py-1 rounded-full border border-gray-400 text-gray-400 text-sm"
                           onClick={()=>{
-                            setDisplayProject(projects)
+                            handleFiltered("All");
                           }}>All</button>
                           <button  className="bg-[#222222] px-3 py-1 rounded-full border border-gray-400 text-gray-400 text-sm" 
                           onClick={()=>{
@@ -94,7 +94,7 @@ const AllWOrk = () =>{
                      <div className="py-8 text-white">
                         {
                             displayProject.length > 0 ?
-                            `${displayProject.length} video${displayProject.length > 1 ? "s" : ""} ${displayProject.length === projects.length? "" : `in
+                            `${displayProject.length} project${displayProject.length > 1 ? "s" : ""} ${displayProject.length === projects.length? "" : `in
                                 ${displayProject[0].category}` }` : "no video Found"
                         }
                      </div>
