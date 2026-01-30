@@ -1,5 +1,5 @@
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Navbar from "../partials/Navbar";
+import Footer from "../partials/Footer";
 import { Outlet } from "react-router-dom";
 const AppLayout = () =>{
     return(

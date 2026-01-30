@@ -6,43 +6,47 @@ const AllWOrk = () =>{
     const projects = [
         {
          name : "Futuer wellness",
-         video : "/Videos/video1.mp4",
+         video : "/videos/video1.mp4",
          category : "Real State",
 
       },
        {
          name : "Pathways Centre",
          category : "shorts/Reels",
-          video : "/Videos/video2.mp4",
+          video : "/videos/video2.mp4",
       },
        {
          name : "Teen Thursday",
          category : "shorts/Reels",
-          video : "/Videos/video3.mp4",
+          video : "/videos/video3.mp4",
       },
        {
          name : "The Lifestyle Equivalent of Swallowing Batteries",
          category : "Real Estate",
-          video : "/Videos/video1.mp4",
+          video : "/videos/video1.mp4",
          
       },
        {
          name : "HSA Account",
          category : "Youtube Videos",
-          video : "/Videos/video2.mp4",
+          video : "/videos/video2.mp4",
          
       },
        {
          name : "Brazil Tour Guide",
          category : "Meta Ads",
-          video : "/Videos/video3.mp4",
+          video : "/videos/video3.mp4",
          
       }
     ];
 
      const[displayProject, setDisplayProject] = useState(projects);
+     const [active, setActive] = useState("All");
+
+    const filterBtn = ["All", "shorts/Reels", "Youtube Videos",  "Meta Ads", "Real Estate", "Others"];
 
      const handleFiltered = (category) =>{
+      setActive(category);
         if(category === "All"){
              setDisplayProject(projects);
         }else{
@@ -68,28 +72,18 @@ const AllWOrk = () =>{
                    </div>
                    <div className="mt-2 py-10">
                      <div className="flex flex-wrap md:gap-4 gap-2">
-                          <button className="bg-[#222222] px-3 py-1 rounded-full border border-gray-400 text-gray-400 text-sm"
-                          onClick={()=>{
-                            handleFiltered("All");
-                          }}>All</button>
-                          <button  className="bg-[#222222] px-3 py-1 rounded-full border border-gray-400 text-gray-400 text-sm" 
-                          onClick={()=>{
-                            handleFiltered("shorts/Reels");
-                          }}>Shorts/Reels</button>
-                          <button  className="bg-[#222222] px-3 py-1 rounded-full border border-gray-400 text-gray-400 text-sm"   onClick={()=>{
-                            handleFiltered("Youtube Videos")}}> Youtube Videos</button>
-                          <button  className="bg-[#222222] px-3 py-1 rounded-full border border-gray-400 text-gray-400 text-sm " onClick={()=>{
-                            handleFiltered("Meta Ads");
-                          }}
-                           >Meta Ads</button>
-                          <button  className="bg-[#222222] px-3 py-1 rounded-full border border-gray-400 text-gray-400 text-sm"   onClick={()=>{
-                            handleFiltered("Real Estate");
-                          }}
-                          >Real Estate</button>
-                          <button  className="bg-[#222222] px-3 py-1 rounded-full border border-gray-400 text-gray-400 text-sm"   onClick={()=>{
-                            handleFiltered("Others");
-                          }}
-                          >Others</button>
+                        {
+                          filterBtn.map((btn)=>(
+                              <button
+                              onClick={()=>{
+                               handleFiltered(btn);
+                             }}
+                           className={`${active === btn ? "bg-[#d21a1a] text-white": "bg-[#222222] text-gray-400"}  px-3 py-1 rounded-full  border   text-sm`}
+                              >{btn}</button>
+                          ))
+                        }
+                         
+                          
                      </div>
                      <div className="py-8 text-white">
                         {
