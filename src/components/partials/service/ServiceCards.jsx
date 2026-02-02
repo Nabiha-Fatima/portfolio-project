@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const ServiceCards = ({cardDetail}) =>{
     return(
         <>
@@ -13,9 +15,9 @@ const ServiceCards = ({cardDetail}) =>{
                 {cardDetail.description}
             </p>
             <div className="flex gap-2 my-6 transition duration-300 ease-in-out lg:opacity-0 lg:group-hover:opacity-100 text-[#d21a1a]">
-                <a href="">
+                <NavLink to="/portfolio/allwork">
                   {cardDetail.button}
-                </a>
+                </NavLink>
                 {cardDetail.icon2}
             </div>
          </div>
