@@ -31,7 +31,7 @@ const Navbar = ({isOpen, setIsOpen}) =>{
                 <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#ffffff"><path d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z"/></svg>
            </button>
          
-           <ul className="flex flex-col gap-3 py-3 my-4 ">
+           <ul className="flex flex-col gap-6 py-3 my-4 ">
            
             <li className="relative group  ">
                 <NavLink to="/" className="inline-block nav-underline">Home</NavLink>
@@ -72,7 +72,7 @@ const Navbar = ({isOpen, setIsOpen}) =>{
             </li>
             <li className="relative group"><NavLink to="/service" className=" inline-block nav-underline">Services</NavLink></li>
             <li className="relative group"><NavLink to="/contact" className=" inline-block nav-underline">Contact</NavLink></li>
-            <Button className="w-26"><NavLink to="/contact">Hire Me</NavLink></Button>
+           <NavLink to="/contact" className="bg-[#d21a1a] w-30 p-3 rounded-full text-center hover:shadow-lg shadow-[#d21a1a] transition duration-300">Hire Me</NavLink>
          
            </ul>
          
@@ -85,7 +85,7 @@ const Navbar = ({isOpen, setIsOpen}) =>{
                          <Icon icon="bx:envelope" width="22" height="22" className=" text-gray-400" />
                         </div>
                         
-                        <a href="contact@example.com" className="text-[#d21a1a]">contact@example.com </a>
+                        <a href="mailto:contact@example.com" target="_blank" className="text-[#d21a1a]">contact@example.com </a>
                     </div>
                     
                        

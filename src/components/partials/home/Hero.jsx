@@ -20,15 +20,16 @@ return(
         Transforming raw footage into captivating content that engages, inspires, and converts.
        </p>
        <div className="mt-6 flex sm:flex-row flex-col items-center gap-4 font-outfit">
-           <Button className="sm:mb-0 mb-2"> <NavLink to="/portfolio/allwork">Watch My Work</NavLink></Button>
-            <Button className=" relative hover:shadow-none overflow-hidden bg-transparent border flex text-[#d21a1a] before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[#d21a1a] before:-translate-x-full   before:transition before:duration-700 ease-in hover:before:translate-x-0 hover:text-white hover:border-[#d21a1a] hover:translate-y-0">
-                <span className="z-10 "> <NavLink to="/contact"> Hire Me</NavLink></span>
-                <span className="relative ml-1.5">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"  fill="currentColor" >
-                    <path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg>
-               </span>
-            </Button>
-           
+           <NavLink className="bg-[#d21a1a] p-4 rounded-full text-sm hover:shadow-lg shadow-[#d21a1a] transition duration-300" to="/portfolio/allwork">Watch My Work</NavLink>
+            <NavLink to="/contact" className="relative hover:shadow-none overflow-hidden bg-transparent border flex text-[#d21a1a] before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[#d21a1a] before:-translate-x-full   before:transition before:duration-500 before:ease-in p-3 rounded-full hover:before:translate-x-0 hover:text-white hover:border-[#d21a1a] hover:translate-y-0 "> 
+            <span className="relative">Hire Me</span>
+            <span className="relative ml-1.5 ">
+                <Icon icon="mdi-light:arrow-right" width="24" height="24" />
+            </span>
+            </NavLink>
+               
+                   
+          
        </div>
      
     </section>

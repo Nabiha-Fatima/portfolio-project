@@ -54,7 +54,7 @@ return(
                                   </div>
                                 </label>
                             </div>
-                            <div className="my-3">
+                            <div className="my-3 mb-6">
                                <label htmlFor="textarea" className="text-gray-500 ">Your Message
                                     <textarea name="" id="textarea" rows={5} className="w-full border text-gra border-gray-600 resize-none rounded-lg mt-1 p-2"></textarea>
                                 </label>
@@ -79,7 +79,7 @@ return(
                                     Email
                                 </h4>
                                 <h6 className="text-white">
-                                    <a href="contact@example.com">contact@example.com</a>
+                                    <a href="mailto:contact@example.com" target="_blank">contact@example.com</a>
                                 </h6>
                             </div>
                        </div>
@@ -93,7 +93,7 @@ return(
                                     Phone
                                 </h4>
                                 <h6 className="text-white">
-                                    <a href="+1 (234) 567-890">+1 (234) 567-890</a>
+                                    <a href="tel:+1 (234) 567-890">+1 (234) 567-890</a>
                                 </h6>
                             </div>
                        </div>
