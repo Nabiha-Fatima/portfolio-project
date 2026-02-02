@@ -17,7 +17,7 @@ const Navbar = ({isOpen, setIsOpen}) =>{
             -960 960 960" width="30px" fill="#ffffff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
         </button>
 
-        <aside className={`flex flex-col md:pt-10 pt-16 justify-between px-4 h-screen shadow-lg shadow-[#111111c9]  lg:w-70 w-64 text-white py-4 font-syne bg-black z-50  fixed top-0 left-0  ${isOpen ? "translate-x-0" : "-translate-x-full"} lg:translate-x-0  transition duration-300`}>
+        <aside className={`flex flex-col md:pt-10 pt-16 gap-8 px-4 h-screen shadow-lg shadow-[#111111c9]  lg:w-70 w-64 text-white py-4 font-syne bg-black z-50  fixed top-0 left-0  ${isOpen ? "translate-x-0" : "-translate-x-full"} lg:translate-x-0  transition duration-300`}>
             
             <div className="flex items-center  ">
                 <span className="bg-[#D21A1A] rounded p-2 mr-4">
@@ -72,12 +72,12 @@ const Navbar = ({isOpen, setIsOpen}) =>{
             </li>
             <li className="relative group"><NavLink to="/service" className=" inline-block nav-underline">Services</NavLink></li>
             <li className="relative group"><NavLink to="/contact" className=" inline-block nav-underline">Contact</NavLink></li>
-            <Button className="w-26">Hire Me</Button>
+            <Button className="w-26"><NavLink to="/contact">Hire Me</NavLink></Button>
          
            </ul>
          
           
-            <div className="mb-4">
+            <div className="mb-4 absolute bottom-0">
                 <h4 className="text-white font-syne font-semibold mb-6">Get in Touch</h4>
                  <div className="font-outfit my-4">
                     <div className="flex gap-2 ">
@@ -85,7 +85,7 @@ const Navbar = ({isOpen, setIsOpen}) =>{
                          <Icon icon="bx:envelope" width="22" height="22" className=" text-gray-400" />
                         </div>
                         
-                        <h5 className="text-[#d21a1a]"> contact@example.com </h5>
+                        <a href="contact@example.com" className="text-[#d21a1a]">contact@example.com </a>
                     </div>
                     
                        

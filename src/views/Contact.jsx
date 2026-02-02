@@ -79,7 +79,7 @@ return(
                                     Email
                                 </h4>
                                 <h6 className="text-white">
-                                    <a href="">contact@example.com</a>
+                                    <a href="contact@example.com">contact@example.com</a>
                                 </h6>
                             </div>
                        </div>
@@ -93,7 +93,7 @@ return(
                                     Phone
                                 </h4>
                                 <h6 className="text-white">
-                                    <a href="">+1 (234) 567-890</a>
+                                    <a href="+1 (234) 567-890">+1 (234) 567-890</a>
                                 </h6>
                             </div>
                        </div>

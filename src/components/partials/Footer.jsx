@@ -7,8 +7,8 @@ const  Footer = () =>{
              <div className="lg:ml-64">
                 <hr className="text-gray-600" />
                 <div className="custom_container  text-sm md:flex justify-between pt-6 text-gray-400 block text-center">
-                    <h5>© 2026 Ali. All rights reserved.</h5>
-                    <h6>Created By The Byte Pulse Software Company</h6>
+                    <h5>© 2026 User. All rights reserved.</h5>
+                    <h6>Created By <a href="https://thebytepulse.com/" target="_blank" className="text-[#d21a1a] cursor-pointer">The Byte Pulse Software Company</a></h6>
                 </div>
              </div>
             </section>

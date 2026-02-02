@@ -1,3 +1,6 @@
+import { NavLink } from "react-router-dom";
+import Button from "../../ui/Button";
+
 const GetStarted = () =>{
     return(
         <>
@@ -9,7 +12,8 @@ const GetStarted = () =>{
             <p className=" text-gray-500 my-2">
                 Let's discuss your project and create something amazing together.
             </p>
-            <button className="bg-[#d21a1a] rounded-full px-4 my-4 py-3 text-white text-sm">Get Started Today</button>
+            <Button className=" px-4 my-4 py-3 text-white text-sm cursor-pointer">
+               <NavLink to="/contact"> Get Started Today </NavLink> </Button>
         </section>
         </>
     )

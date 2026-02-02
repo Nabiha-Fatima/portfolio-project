@@ -1,5 +1,6 @@
 import { useState } from "react";
 import PortfolioCard from "./PortfolioCard";
+import { NavLink } from "react-router-dom";
 
  const PortfolioSection = () =>{
      const [currIndex, setCurrIndex] = useState(0);
@@ -32,10 +33,10 @@ import PortfolioCard from "./PortfolioCard";
                     </h2>
                    </div>
                 <div className="flex items-center gap-1 text-gray-400 font-outfit hover:text-[#d21a1a] transition duration-300">
-                    <a href="" className="">
+                    <NavLink to="/portfolio/allwork" className="">
                     View All Projects
                     
-                </a>
+                </NavLink>
                 <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="currentColor"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg>
                 </div>
             </div>
