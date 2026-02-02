@@ -17,7 +17,7 @@ const Navbar = ({isOpen, setIsOpen}) =>{
             -960 960 960" width="30px" fill="#ffffff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
         </button>
 
-        <aside className={`flex flex-col md:pt-10 pt-16 gap-10 px-4 h-screen shadow-lg shadow-[#111111c9]  lg:w-70 w-64 text-white py-4 font-syne bg-black z-50  fixed top-0 left-0  ${isOpen ? "translate-x-0" : "-translate-x-full"} lg:translate-x-0  transition duration-300`}>
+        <aside className={`flex flex-col md:pt-10 pt-16 justify-between px-4 h-screen shadow-lg shadow-[#111111c9]  lg:w-70 w-64 text-white py-4 font-syne bg-black z-50  fixed top-0 left-0  ${isOpen ? "translate-x-0" : "-translate-x-full"} lg:translate-x-0  transition duration-300`}>
             
             <div className="flex items-center  ">
                 <span className="bg-[#D21A1A] rounded p-2 mr-4">
@@ -31,7 +31,7 @@ const Navbar = ({isOpen, setIsOpen}) =>{
                 <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#ffffff"><path d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z"/></svg>
            </button>
          
-           <ul className="flex flex-col gap-5 ">
+           <ul className="flex flex-col gap-5 py-3 ">
            
             <li className="relative group  ">
                 <NavLink to="/" className="inline-block nav-underline">Home</NavLink>
@@ -72,13 +72,14 @@ const Navbar = ({isOpen, setIsOpen}) =>{
             </li>
             <li className="relative group"><NavLink to="/service" className=" inline-block nav-underline">Services</NavLink></li>
             <li className="relative group"><NavLink to="/contact" className=" inline-block nav-underline">Contact</NavLink></li>
+            <Button className="w-26">Hire Me</Button>
+         
            </ul>
          
-          <Button className="w-26">Hire Me</Button>
-         
+          
             <div className="mb-4">
                 <h4 className="text-white font-syne font-semibold mb-6">Get in Touch</h4>
-                <div className="font-outfit">
+                 <div className="font-outfit my-4">
                     <div className="flex gap-2 ">
                         <div className="flex justify-center items-center h-8 w-8 rounded bg-[#222222] mb-2">
                          <Icon icon="bx:envelope" width="22" height="22" className=" text-gray-400" />
@@ -89,8 +90,7 @@ const Navbar = ({isOpen, setIsOpen}) =>{
                     
                        
                  </div>
-           </div>
-            <div className="flex gap-2  text-gray-300 ">
+                    <div className="flex gap-2  text-gray-300 ">
                         <div className="bg-[#222222] transition duration-300 hover:bg-[#d21a1a] flex items-center gap-3 h-10 w-10 rounded-full cursor-pointer">
                         <Icon  icon="si:youtube-line" width="20" height="20" className="mx-auto" />
                         </div>
@@ -105,6 +105,8 @@ const Navbar = ({isOpen, setIsOpen}) =>{
                             </div>
                     
                     </div>
+           </div>
+         
         </aside>
     </>
 

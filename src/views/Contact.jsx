@@ -1,5 +1,5 @@
 import { Icon } from "@iconify/react";
-import Button from "../ui/Button";
+import Button from "../components/ui/Button";
 const Contact = () =>{
 return(
     <>
@@ -79,7 +79,7 @@ return(
                                     Email
                                 </h4>
                                 <h6 className="text-white">
-                                    contact@example.com
+                                    <a href="">contact@example.com</a>
                                 </h6>
                             </div>
                        </div>
@@ -93,7 +93,7 @@ return(
                                     Phone
                                 </h4>
                                 <h6 className="text-white">
-                                    +1 (234) 567-890
+                                    <a href="">+1 (234) 567-890</a>
                                 </h6>
                             </div>
                        </div>

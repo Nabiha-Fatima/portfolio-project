@@ -78,7 +78,7 @@ const AllWOrk = () =>{
                               onClick={()=>{
                                handleFiltered(btn);
                              }}
-                           className={`${active === btn ? "bg-[#d21a1a] text-white": "bg-[#222222] text-gray-400"}  px-3 py-1 rounded-full  border   text-sm`}
+                           className={`${active === btn ? "bg-[#d21a1a] text-white": "bg-[#222222] text-gray-400"}  px-3 py-1 rounded-full  border   text-sm cursor-pointer`}
                               >{btn}</button>
                           ))
                         }

@@ -19,6 +19,8 @@ import PortfolioCard from "./PortfolioCard";
         
     ];
     const cardWidth = window.innerWidth >= 768 ? 320 : 240 ;
+    const visibleCards = Math.floor(window.innerWidth / cardWidth);
+    const maxIndex = cards.length - visibleCards;
      return(
         <>
           <div className="custom_container  ">
@@ -50,8 +52,14 @@ import PortfolioCard from "./PortfolioCard";
            
             <div className="my-2 flex items-center justify-center gap-4 ">
                 <button className=" slider_btn  cursor-pointer" onClick={() => {
-                    if(currIndex > 0)
-                        setCurrIndex(currIndex - 1);
+                    const maxIndex = cards.length - 1;
+                    if(currIndex === 0){
+                        setCurrIndex(maxIndex);
+                    }
+                    else{
+                       setCurrIndex(currIndex - 1);
+                    }
+                        
                    
                 }}
                 >
@@ -61,7 +69,11 @@ import PortfolioCard from "./PortfolioCard";
 
                 <button className="slider_btn cursor-pointer" onClick={()=>{
                       const maxIndex = cards.length - 1;
-                     if (currIndex < maxIndex) setCurrIndex(currIndex + 1);
+                     if (currIndex === maxIndex){
+                        setCurrIndex(0);
+                     }else{
+                        setCurrIndex(currIndex + 1);
+                     } 
                 }}>
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
                 </button>

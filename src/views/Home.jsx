@@ -1,11 +1,11 @@
-import Hero from "../partials/home/Hero";
-import Navbar from "../partials/Navbar";
+import Hero from "../components/partials/home/Hero";
+import Navbar from "../components/partials/Navbar";
 import { useState } from "react";
-import { useIsMobile } from "../../hooks/useIsMobile";
-import Counter from "../partials/home/Counter";
-import PortfolioSection from "../partials/home/PortfolioSection";
+import { useIsMobile } from "../hooks/useIsMobile";
+import Counter from "../components/partials/home/Counter";
+import PortfolioSection from "../components/partials/home/PortfolioSection";
 import Service from "./Service";
-import Testimonial from "../partials/home/Testimonial";
+import Testimonial from "../components/partials/home/Testimonial";
 
 function Home() {
   const isMobile = useIsMobile(); // hook use kiya
