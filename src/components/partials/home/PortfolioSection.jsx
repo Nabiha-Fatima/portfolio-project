@@ -25,19 +25,19 @@ import { NavLink } from "react-router-dom";
      return(
         <>
           <div className="custom_container  ">
-                <div className="sm:flex sm:justify-between items-end py-10 ">
+                <div className="flex lg:justify-between lg:flex-row justify-center lg:items-end items-center flex-col py-10  lg:text-left text-center">
                     <div className="mb-2 sm:mb-0">
                     <h4 className="custom_red font-outfit mb-2">Portfolio</h4>
                     <h2 className="text-white sm:text-3xl text-xl font-syne font-bold">
                         Featured Work
                     </h2>
                    </div>
-                <div className="flex items-center gap-1 text-gray-400 font-outfit hover:text-[#d21a1a] transition duration-300">
+                 <div className="flex items-center gap-1 text-gray-400 font-outfit hover:text-[#d21a1a] transition duration-300">
                     <NavLink to="/portfolio/allwork" className="">
                     View All Projects
                     
-                </NavLink>
-                <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="currentColor"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg>
+                 </NavLink>
+                 <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="currentColor"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg>
                 </div>
             </div>
             <div className="overflow-hidden">
