@@ -41,7 +41,7 @@ const Testimonial = () =>{
                 </h2>
                 <div className="text-gray-400">
                     These reviews are taken directly from my Upwork clients.
-                    <span className="text-[#d21a1a] font-semibold"> <a href="https://thebytepulse.com/">View my full Upwork profile.</a></span>
+                    <span className="text-[#d21a1a] font-semibold"> <a href="https://thebytepulse.com/" target="_blank">View my full Upwork profile.</a></span>
                 </div>
                 
             </div>
