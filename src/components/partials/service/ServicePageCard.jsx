@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react";
+import { NavLink } from "react-router-dom";
 
 const ServicePageCard = ({card}) =>{
     return(
@@ -20,7 +21,7 @@ const ServicePageCard = ({card}) =>{
                 {li}</li>
              )) }
            </ul>
-           <button className="text-[#d21a1a] text-left my-4 cursor-pointer hover:-translate-y-1.5 transition duration-300">{card.button}</button>
+           <button className="text-[#d21a1a] text-left my-4 cursor-pointer hover:-translate-y-1.5 transition duration-300"> <NavLink to="/contact">{card.button}</NavLink></button>
         </div>
         </>
     )
