@@ -1,5 +1,4 @@
 import { Icon } from "@iconify/react";
-import Button from "../components/ui/Button";
 const Contact = () =>{
 return(
     <>
@@ -59,9 +58,9 @@ return(
                                     <textarea name="" id="textarea" rows={5} className="w-full border text-gra border-gray-600 resize-none rounded-lg mt-1 p-2"></textarea>
                                 </label>
                             </div> 
-                         <Button className="mt-4 text-white rounded-lg w-full">
+                         <a className="mt-4 text-white bg-[#d21a1a] p-3 rounded-full transition duration-300 cursor-pointer hover:shadow-lg shadow-[#d21a1a] w-full">
                             Send Message
-                         </Button>
+                         </a>
                         </form>
                    </div>
                    <div className=" lg:w-[50%]  font-outfit my-4">

@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import Button from "../../ui/Button";
+
 
 const GetStarted = () =>{
     return(

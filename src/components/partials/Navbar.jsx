@@ -1,5 +1,4 @@
 import {  useState } from "react";
-import Button from "../ui/Button";
 import { Icon } from "@iconify/react";
 import { NavLink } from "react-router-dom";
 const Navbar = ({isOpen, setIsOpen}) =>{
